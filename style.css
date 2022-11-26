@@ -7,8 +7,23 @@ body {
     }
   }
 
-  
-  
+h1 {
+    text-align: center;
+}
+/* Search Button Styling */
+.searchBtn {
+    border-radius: 25px;
+    background-color: rgb(93, 116, 194);
+    color: white;
+    border: white;
+
+}
+
+.searchBtn:hover {
+    background-color: rgb(127, 62, 127);
+    cursor: pointer;
+}
+
   /* Sidebar */
   .sidebar {
     position: fixed;
