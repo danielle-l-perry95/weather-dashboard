@@ -55,6 +55,36 @@ h1 {
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
   }
 
-  ul {
+.container {
+    padding-left: 10%;
+}
+
+
+  /* Removed bullet points from list items */
+ul {
     list-style: none;
+    text-align: left;
   }
+
+.col {
+   border-style: solid;
+   background-color: rgb(62, 67, 89);
+   color:white;
+
+}
+
+.current-city {
+    text-align: center;
+    border-style: solid;
+    background-color: rgb(127, 135, 170);
+    color:white;
+    padding-bottom: 10%;
+    margin: 10px, white;
+    font-size: 60px;
+
+}
+
+#current-display {
+    text-align: center;
+    font-size: 25px;
+}
