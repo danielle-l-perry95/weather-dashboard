@@ -23,7 +23,9 @@
         <!-- Search for a city sidebar -->
             <h2>Search for a city</h2>
                 <textarea>San Diego</textarea>
-                <button class="searchBtn">Search</button>
+                <button class="searchBtn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>Search</button>
                 <br>
 <!-- Cities list -->
         <a href="#" class="list-group-item list-group-item-action py-2 ripple"
@@ -54,8 +56,9 @@
     </div>
   </nav>
   <div class="current-city">
-    <h3>Atlanta 11/26/22</h3>
+    <h3 id="city-date">Atlanta 11/26/22</h3>
         <ul id="current-display">
+            <li src="" alt="'">Weather Icon</li>
             <li>Temp:</li>
             <li>Wind:</li>
             <li>Humidity:</li>
@@ -65,17 +68,19 @@
   <div class="container text-center">
     <h4>5 Day Forecast:</h4>
     <div class="row">
-      <div class="col">
+      <div id="date-1" class="col">
         Date 1
         <ul>
-            <li>Temp:</li>
-            <li>Wind:</li>
-            <li>Humidity:</li>
+            <li id="icon-1" src="" alt=" ">Weather Icon</li>
+            <li id="temp-1">Temp:</li>
+            <li id="wind-speed-1">Wind:</li>
+            <li id="humidity-1">Humidity:</li>
         </ul>
       </div>
       <div class="col">
         Date 2
         <ul>
+            <li src="" alt=" ">Weather Icon</li>
             <li>Temp:</li>
             <li>Wind:</li>
             <li>Humidity:</li>
@@ -84,6 +89,7 @@
       <div class="col">
         Date 3
         <ul>
+            <li src="" alt="'">Weather Icon</li>
             <li>Temp:</li>
             <li>Wind:</li>
             <li>Humidity:</li>
@@ -92,6 +98,7 @@
       <div class="col">
         Date 4
         <ul>
+            <li src="" alt="'">Weather Icon</li>
             <li>Temp:</li>
             <li>Wind:</li>
             <li>Humidity:</li>
@@ -100,6 +107,7 @@
       <div class="col">
         Date 5
         <ul>
+            <li src="" alt="'">Weather Icon</li>
             <li>Temp:</li>
             <li>Wind:</li>
             <li>Humidity:</li>
