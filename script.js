@@ -13,3 +13,9 @@ function getDenver(denverUrl) {
 getDenver(denverUrl) 
 
 
+// make click event for each city to display 5 day forecast Denver, Seattle, San fran, Orlando, New York, Chicago, Austin, and Atlanta 
+//make click event to display 5 day forecast for searched city on search button click 
+//id="citySearch"
+// id="city-date"
+//save previous data to local storage 
+//get api data for any city not just denver
