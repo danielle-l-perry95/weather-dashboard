@@ -5,10 +5,9 @@ var forecastApi = "https://api.openweathermap.org/data/2.5/forecast?q={city name
 var searchBtnEl = document.querySelector(".searchBtn")
 var forecastContainerEl = document.querySelector(".container text-center")
 
+//Define day in moment.js 
+day = moment().format('MMMM Do YYYY, h:mm:ss a');
 
-
-
-//make click event to display 5 day forecast for searched city on search button click 
 
 //get cities
 var getCity = function (city) {
@@ -24,8 +23,11 @@ var getCity = function (city) {
             })
         })
 }
-//Define day in moment.js 
-day = moment().format('MMMM Do YYYY, h:mm:ss a');
+
+
+
+
+//5 day forecast 
 var getForecast = " "
 //fix parenthesis 
 data.forEach(this.(day, i) => {
@@ -45,6 +47,9 @@ data.forEach(this.(day, i) => {
     }
 })
 forecastContainerEl.innerHTML = getForecast
+
+//save data to local storage. 
+
 // var getForecast = function (data) {
 // fetch("https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=imperial&appid=28635cc21461593ac623017059189851") 
 //     .then((response) => response.json())
@@ -62,17 +67,10 @@ forecastContainerEl.innerHTML = getForecast
 
 
 
-
+//make click event to display 5 day forecast for searched city on search button click 
 //search button click
-//searchBtnEl.addEventListener('click', buttonClickFunction)
+//define buttonClickFunction 
+searchBtnEl.addEventListener('click', buttonClickFunction)
 
-// var denverUrl = "https://api.openweathermap.org/data/2.5/forecast?q=Denver&appid=28635cc21461593ac623017059189851"
-// function getDenver(denverUrl) {
-//     fetch(denverUrl)
-//     .then((response) => response.json())
-//     .then((data) => console.log(data))
-
-// }
-// getDenver(denverUrl) 
 
 
